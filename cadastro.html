@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="email" id="novoEmail" placeholder="Email">
+        <input type="text" id="telefone" placeholder="Telefone">
+        
+        <input type="password" id="novaSenha" placeholder="Senha (Use uma senha falsa)">
+        <small style="color: #ff4d4d; display: block; margin-top: -10px; margin-bottom: 15px; font-size: 12px;">
+            ⚠️ Projeto de portfólio: Por favor, não digite senhas reais!
+        </small>
+
+        <h4>Deseja receber as notificações por email?</h4>
+        <section>
+            <div>
+                <input type="radio" id="naoNotifEmail" name="notifEmail" value="Não" checked>
+                <label for="naoNotifEmail">Não</label>
+            </div>
+            <div>
+                <input type="radio" id="simNotifEmail" name="notifEmail" value="Sim">
+                <label for="simNotifEmail">Sim</label>    
+            </div>
+        </section>
+
+        <h4 style="margin-top: 25px; margin-bottom: 15px;">Junte-se às nossas comunidades!</h4>
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px;">
+            <a href="https://t.me/PSIA_noticias_ia" target="_blank" style="text-decoration: none; background-color: #0088cc; color: white; padding: 12px; border-radius: 5px; text-align: center; font-weight: bold;">
+                📱 Entrar no Canal do Telegram
+            </a>
+        </div>
+
+        <button type="button" id="btnCadastro">Cadastrar</button>
+    </div>
+    
+    <script src="/js/cadastro.js"></script>
+</body>
+</html>

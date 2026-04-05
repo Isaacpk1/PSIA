@@ -1,0 +1,142 @@
+/* Importando as fontes do portal PSIA */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+    --red:       #c0392b;
+    --red-dark:  #96281b;
+    --ink:       #111111;
+    --mid:       #444444;
+    --muted:     #888888;
+    --rule:      #e0e0e0;
+    --bg:        #f5f4f0;
+    --white:     #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;           
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--white);
+    padding: 2.5rem 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.container h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: var(--ink);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.container h4 {
+    color: var(--ink);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem; /* Aproxima a pergunta das opções */
+}
+
+/* Estilo dos campos de texto igual à barra de pesquisa do index */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    border: 1.5px solid var(--rule);
+    border-radius: 4px;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: var(--bg);
+    color: var(--ink);
+    transition: border-color 0.2s ease;
+}
+
+.container input:focus {
+    outline: none;
+    border-color: var(--red);
+}
+
+/* Estilo dos radio buttons */
+section {
+    display: flex;
+    gap: 30px;
+    color: var(--mid);
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+section input[type="radio"] {
+    accent-color: var(--red);
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+label {
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--mid);
+}
+
+/* Botão principal de Cadastro no padrão PSIA */
+button#btnCadastro {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-top: 1rem;
+}
+
+button#btnCadastro:hover {
+    background: var(--red-dark);
+}
+
+/* Ajustes para os botões do Telegram e Discord */
+.container a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.container a:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Mensagem de aviso do portfólio */
+small {
+    color: var(--red);
+    font-weight: 600;
+}
