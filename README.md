@@ -1,10 +1,10 @@
-# 📰 PSIA — Pipeline de Notícias de IA
+# PSIA — Pipeline de Notícias de IA
 
 Workflow automatizado em **n8n** que coleta, processa e distribui as principais notícias sobre Inteligência Artificial do dia, usando Google News, GPT, Google Sheets, Telegram e Gmail.
 
 ---
 
-## ✨ O que ele faz
+## O que ele faz
 
 Todo dia às **05h00**, o workflow:
 
@@ -16,7 +16,7 @@ Todo dia às **05h00**, o workflow:
 
 ---
 
-## 🔁 Fluxo passo a passo
+## Fluxo passo a passo
 
 ```
 Schedule Trigger (05h)
@@ -32,7 +32,7 @@ Schedule Trigger (05h)
 
 ---
 
-## 🗂️ Estrutura do Google Sheets
+## Estrutura do Google Sheets
 
 O workflow usa **uma planilha com duas abas**:
 
@@ -58,7 +58,7 @@ Armazena o conteúdo editorial gerado pela IA a cada execução.
 
 ---
 
-## 🤖 Estrutura do JSON gerado pela IA
+## Estrutura do JSON gerado pela IA
 
 Cada objeto dentro de `Grid_Noticias` contém:
 
@@ -75,7 +75,7 @@ Cada objeto dentro de `Grid_Noticias` contém:
 
 ---
 
-## ⚙️ Pré-requisitos
+## Pré-requisitos
 
 Para usar este workflow, você precisa configurar as seguintes credenciais no n8n:
 
@@ -88,7 +88,7 @@ Para usar este workflow, você precisa configurar as seguintes credenciais no n8
 
 ---
 
-## 🚀 Como usar
+## Como usar
 
 1. Importe o arquivo `.json` do workflow no seu n8n
 2. Configure todas as credenciais listadas acima
@@ -99,7 +99,7 @@ Para usar este workflow, você precisa configurar as seguintes credenciais no n8
 
 ---
 
-## 📬 Exemplo de e-mail enviado
+## Exemplo de e-mail enviado
 
 O e-mail é personalizado com o nome do assinante e lista todas as notícias do dia com:
 - Categoria e tempo de publicação
@@ -109,7 +109,7 @@ O e-mail é personalizado com o nome do assinante e lista todas as notícias do 
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [n8n](https://n8n.io/) — Orquestração do workflow
 - [Google News RSS](https://news.google.com/rss) — Fonte das notícias
